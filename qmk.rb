@@ -7,7 +7,7 @@ class Qmk < Formula
   homepage "https://github.com/qmk/qmk_cli"
   url "https://files.pythonhosted.org/packages/bc/46/83a9701e8970ab9a369edab8dea578f152dbb7108412fc6ffb436b3e61a9/qmk-0.0.5.tar.gz"
   sha256 "eac94799ba2da2ed9ca50222d32e4031e1065810f3f874eeb047b15b27261b13"
-  verison 0.0.5
+  verison "0.0.5"
   
   resource "argcomplete" do
     url "https://files.pythonhosted.org/packages/9c/c5/4009a381ba46f8424832b6fa9a6d8c79b2089a0170beb434280d293a5b5c/argcomplete-1.10.0.tar.gz"

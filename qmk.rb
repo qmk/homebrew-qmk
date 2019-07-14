@@ -1,4 +1,4 @@
-class QMK < Formula
+class Qmk < Formula
   include Language::Python::Virtualenv
 
   depends_on "python"

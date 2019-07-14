@@ -24,3 +24,4 @@ Class QMK < Formula
   def install
     virtualenv_install_with_resources
   end
+end

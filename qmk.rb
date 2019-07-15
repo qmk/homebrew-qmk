@@ -5,12 +5,8 @@ class Qmk < Formula
 
   desc "A program to help users work with QMK Firmware."
   homepage "https://github.com/qmk/qmk_cli"
-  url "https://files.pythonhosted.org/packages/bc/46/83a9701e8970ab9a369edab8dea578f152dbb7108412fc6ffb436b3e61a9/qmk-0.0.5.tar.gz"
-
-  resource "qmk" do
-    url "https://files.pythonhosted.org/packages/bc/46/83a9701e8970ab9a369edab8dea578f152dbb7108412fc6ffb436b3e61a9/qmk-0.0.5.tar.gz"
-    sha256 "eac94799ba2da2ed9ca50222d32e4031e1065810f3f874eeb047b15b27261b13"
-  end
+  url "https://files.pythonhosted.org/packages/ea/89/850c8b28edd14529b9d99e0c8541e5638b5a1ad4b5d8f5f823f68630af23/qmk-0.0.7.tar.gz"
+  sha256 "c31714b3d365a7b15d0ea4cc1bed5148176657466d81b3de7d7c7fcfb2174750"
 
   resource "argcomplete" do
     url "https://files.pythonhosted.org/packages/9c/c5/4009a381ba46f8424832b6fa9a6d8c79b2089a0170beb434280d293a5b5c/argcomplete-1.10.0.tar.gz"
@@ -23,16 +19,6 @@ class Qmk < Formula
   end
   
   def install
-    venv = virtualenv_create(libexec)
-    %w[argcomplete colorama].each do |r|
-      venv.pip_install resource(r)
-    end
-
-    venv.pip_install_and_link(qmk)
-    # bin_before = Dir[@venv_root/"bin/*"].to_set
-    # venv.pip_install resource(qmk)
-    # bin_after = Dir[@venv_root/"bin/*"].to_set
-    # bin_to_link = (bin_after - bin_before).to_a
-    # @formula.bin.install_symlink(bin_to_link)
+    virtualenv_install_with_resources
   end
 end

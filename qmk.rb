@@ -23,6 +23,11 @@ class Qmk < Formula
     sha256 "9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92"
   end
 
+  resource "nose2" do
+    url "https://files.pythonhosted.org/packages/65/39/7038f482bfd736dad4d5c0b888bf6b71b02517d098e6c99b11213a49ece3/nose2-0.9.1.tar.gz"
+    sha256 "0ede156fd7974fa40893edeca0b709f402c0ccacd7b81b22e76f73c116d1b999"
+  end
+
   def install
     virtualenv_install_with_resources
   end

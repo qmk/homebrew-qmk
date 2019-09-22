@@ -28,6 +28,16 @@ class Qmk < Formula
     sha256 "0ede156fd7974fa40893edeca0b709f402c0ccacd7b81b22e76f73c116d1b999"
   end
 
+  resource "coverage" do
+    url "https://files.pythonhosted.org/packages/85/d5/818d0e603685c4a613d56f065a721013e942088047ff1027a632948bdae6/coverage-4.5.4.tar.gz"
+    sha256 "e07d9f1a23e9e93ab5c62902833bf3e4b1f65502927379148b6622686223125c"
+  done
+
+  resource "six" do
+    url "https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/six-1.12.0.tar.gz"
+    sha256 "d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
+  done
+
   def install
     virtualenv_install_with_resources
   end

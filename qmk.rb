@@ -5,8 +5,8 @@ class Qmk < Formula
 
   desc "A program to help users work with QMK Firmware."
   homepage "https://github.com/qmk/qmk_cli"
-  url "https://files.pythonhosted.org/packages/fa/9a/d31793afc6cf09592ed988ced92437e494b79306b2b2b8a083e64f9c2a03/qmk-0.0.10.tar.gz"
-  sha256 "1527191afcfbd045ccdc4596e0e91a538a6fda4b158aa06332d6fb155383d353"
+  url "https://files.pythonhosted.org/packages/ae/c7/14709382c5b07433a8530ca7f8493a1a13b0bf2b5be195f5568aa326f13f/qmk-0.0.11.tar.gz"
+  sha256 "064f7d9280e618ad257cb7add89cd25596f15258f4219563c094f8606c17adeb"
 
   resource "argcomplete" do
     url "https://files.pythonhosted.org/packages/9c/c5/4009a381ba46f8424832b6fa9a6d8c79b2089a0170beb434280d293a5b5c/argcomplete-1.10.0.tar.gz"
@@ -18,6 +18,11 @@ class Qmk < Formula
     sha256 "05eed71e2e327246ad6b38c540c4a3117230b19679b875190486ddd2d721422d"
   end
   
+  resource "appdirs" do
+    url "https://files.pythonhosted.org/packages/56/eb/810e700ed1349edde4cbdc1b2a21e28cdf115f9faf263f6bbf8447c1abf3/appdirs-1.4.3-py2.py3-none-any.whl"
+    sha256 "9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92"
+  end
+
   def install
     virtualenv_install_with_resources
   end

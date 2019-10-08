@@ -5,8 +5,8 @@ class Qmk < Formula
 
   desc "A program to help users work with QMK Firmware."
   homepage "https://github.com/qmk/qmk_cli"
-  url "https://files.pythonhosted.org/packages/84/52/db3e22bf7a89182858829116b335e664856e246ed8e1b3352326f037014e/qmk-0.0.14.tar.gz"
-  sha256 "a46426782ae2f670c462827a529566f23fe7a43313240694264ec7224b566bfe"
+  url "https://files.pythonhosted.org/packages/84/ac/c96d9f6fd3935bdb78a3c6005a0ae4aae7b146b734119ecea974446b98f2/qmk-0.0.15.tar.gz"
+  sha256 "690e0ce8cae6f760e4c444c731ed38075ff034940301305790891a1137e2d279"
 
   resource "argcomplete" do
     url "https://files.pythonhosted.org/packages/9c/c5/4009a381ba46f8424832b6fa9a6d8c79b2089a0170beb434280d293a5b5c/argcomplete-1.10.0.tar.gz"
@@ -18,6 +18,11 @@ class Qmk < Formula
     sha256 "05eed71e2e327246ad6b38c540c4a3117230b19679b875190486ddd2d721422d"
   end
   
+  resource "hjson" do
+    url "https://files.pythonhosted.org/packages/8a/92/6b6b85064f8a88cb3b31901d839e7b45c33e4ee450bb1b3cf0c226cca8ec/hjson-3.0.1.tar.gz"
+    sha256 "1d1727faa6aaef2973921877125a3ab7c5f6d34b93233179d01770f41fab51f9"
+  end
+
   resource "appdirs" do
     url "https://files.pythonhosted.org/packages/48/69/d87c60746b393309ca30761f8e2b49473d43450b150cb08f3c6df5c11be5/appdirs-1.4.3.tar.gz"
     sha256 "9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92"

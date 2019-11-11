@@ -5,8 +5,8 @@ class Qmk < Formula
 
   desc "A program to help users work with QMK Firmware."
   homepage "https://github.com/qmk/qmk_cli"
-  url "https://files.pythonhosted.org/packages/b1/c2/cadf5e386d8e9129f3e2cac303442ec2aa1c0d3c11e9abcf9eeaa06e1e7b/qmk-0.0.19.tar.gz"
-  sha256 "b6b800992e20297fae5104103353dc0f6d2662cd19034ddec25d44f43f7c83c6"
+  url "https://files.pythonhosted.org/packages/8e/b8/160686198b1ab215df1cba74a4bda06890df4fbd2b557627bc26495f5e6e/qmk-0.0.20.tar.gz"
+  sha256 "5b1e31e0fef14c0e723fcb16e68362399f4df5e89e12ca95ec496c21c27a1dad"
 
   resource "argcomplete" do
     url "https://files.pythonhosted.org/packages/9c/c5/4009a381ba46f8424832b6fa9a6d8c79b2089a0170beb434280d293a5b5c/argcomplete-1.10.0.tar.gz"

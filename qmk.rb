@@ -43,6 +43,11 @@ class Qmk < Formula
     sha256 "d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
   end
 
+  resource "yapf" do
+    url "https://files.pythonhosted.org/packages/89/41/7f7c884531730c0cb471764e1ddf50f59d25bb2ab258ede633264344e9cb/yapf-0.28.0.tar.gz"
+    sha256 "6f94b6a176a7c114cfa6bad86d40f259bbe0f10cf2fa7f2f4b3596fc5802a41b"
+  end
+
   def install
     virtualenv_install_with_resources
   end

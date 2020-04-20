@@ -1,12 +1,19 @@
 class Qmk < Formula
   include Language::Python::Virtualenv
 
-  depends_on "python"
-
-  desc "A program to help users work with QMK Firmware."
-  homepage "https://github.com/qmk/qmk_cli"
+  desc "Quantum Mechanical Keyboard (QMK) Firmware"
+  homepage "https://docs.qmk.fm/"
   url "https://files.pythonhosted.org/packages/c9/6d/2e9b255633150120ff9a9303142d8891b5f97ac3fef8e2c7ef6edaa3d39e/qmk-0.0.33.tar.gz"
   sha256 "48c0c77929f5e795516beb2c44f851b9083420d7b6e0f76c9d716f827b2fc893"
+
+  depends_on "avrdude"
+  depends_on "bootloadhid"
+  depends_on "clang-format"
+  depends_on "dfu-programmer"
+  depends_on "dfu-util"
+  depends_on "osx-cross/arm/arm-gcc-bin@8"
+  depends_on "osx-cross/avr/avr-gcc@8"
+  depends_on "python"
 
   resource "appdirs" do
     url "https://files.pythonhosted.org/packages/48/69/d87c60746b393309ca30761f8e2b49473d43450b150cb08f3c6df5c11be5/appdirs-1.4.3.tar.gz"
@@ -22,7 +29,7 @@ class Qmk < Formula
     url "https://files.pythonhosted.org/packages/76/53/e785891dce0e2f2b9f4b4ff5bc6062a53332ed28833c7afede841f46a5db/colorama-0.4.1.tar.gz"
     sha256 "05eed71e2e327246ad6b38c540c4a3117230b19679b875190486ddd2d721422d"
   end
-  
+
   resource "coverage" do
     url "https://files.pythonhosted.org/packages/85/d5/818d0e603685c4a613d56f065a721013e942088047ff1027a632948bdae6/coverage-4.5.4.tar.gz"
     sha256 "e07d9f1a23e9e93ab5c62902833bf3e4b1f65502927379148b6622686223125c"
@@ -75,5 +82,25 @@ class Qmk < Formula
 
   def install
     virtualenv_install_with_resources
+  end
+
+  def caveats
+    <<~EOS
+      QMK Firmware has been installed but your environment may not have been setup yet. Please set it up now:
+
+          qmk setup
+
+      If you have a fork already you can specify it like this:
+
+          qmk setup <username>/qmk_firmware
+
+      This will create qmk_firmware in your home directory. If you'd like to change this location set this environment variable in your .profile:
+
+          export QMK_HOME=</your/preferred/path>
+    EOS
+  end
+
+  test do
+    system bin/"qmk", "setup", "-n"
   end
 end

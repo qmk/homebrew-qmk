@@ -3,8 +3,8 @@ class Qmk < Formula
 
   desc "Quantum Mechanical Keyboard (QMK) Firmware"
   homepage "https://docs.qmk.fm/"
-  url "https://files.pythonhosted.org/packages/d3/83/40919353943ba4f3b92b190aab3b359a638661aa709b2d8170d2a744a9f6/qmk-0.0.35.tar.gz"
-  sha256 "e704ca31cdca264bfdd99c72a4849a9e9762043e4bf328118c49af92d1c0a3b5"
+  url "https://files.pythonhosted.org/packages/73/fa/ee281f36913888dd2d32057896764a6d897a462c03aba2fc886bd288cb4e/qmk-0.0.36.tar.gz"
+  sha256 "8d8f0bb7dd2c740d8af99ab4650e306a87c75e5a5785cf3f03a0272d215d1671"
 
   depends_on "avrdude"
   depends_on "bootloadhid"
@@ -15,6 +15,11 @@ class Qmk < Formula
   depends_on "osx-cross/avr/avr-gcc@8"
   depends_on "python"
   depends_on "teensy_loader_cli"
+
+  resource "milc" do
+    url "https://files.pythonhosted.org/packages/01/62/7478fd8c858e9819d02e7d21e1c0500c117ce95ae3cd16ec2967ad978644/milc-1.0.8.tar.gz"
+    sha256 "d0fdc2198f4c6c01b6b76715da492c7bdfca7704992b6fa7006d6d98e28f628f"
+  end
 
   resource "appdirs" do
     url "https://files.pythonhosted.org/packages/48/69/d87c60746b393309ca30761f8e2b49473d43450b150cb08f3c6df5c11be5/appdirs-1.4.3.tar.gz"

@@ -3,8 +3,8 @@ class Qmk < Formula
 
   desc "Quantum Mechanical Keyboard (QMK) Firmware"
   homepage "https://docs.qmk.fm/"
-  url "https://files.pythonhosted.org/packages/73/fa/ee281f36913888dd2d32057896764a6d897a462c03aba2fc886bd288cb4e/qmk-0.0.36.tar.gz"
-  sha256 "8d8f0bb7dd2c740d8af99ab4650e306a87c75e5a5785cf3f03a0272d215d1671"
+  url "https://files.pythonhosted.org/packages/b0/f3/6bb6a5fd5ea95a965ea9dc0a3d36a638c1edaeb8da76bf171acb4129cb2c/qmk-0.0.37.tar.gz"
+  sha256 "c10a1b18a9a9ecfa1a188a4174ed97fcb9b46b5fb706af6acdf879cfdef1af24"
 
   depends_on "avrdude"
   depends_on "bootloadhid"
@@ -72,8 +72,8 @@ class Qmk < Formula
   end
 
   resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/5d/0e/ff13c055b014d634ed17e9e9345a312c28ec6a06448ba6d6ccfa77c3b5e8/Pygments-2.7.2.tar.gz"
-    sha256 "381985fcc551eb9d37c52088a32914e00517e57f4a21609f48141ba08e193fa0"
+    url "https://files.pythonhosted.org/packages/29/60/8ff9dcb5eac7f4da327ba9ecb74e1ad783b2d32423c06ef599e48c79b1e1/Pygments-2.7.3.tar.gz"
+    sha256 "ccf3acacf3782cbed4a989426012f1c535c9a90d3a7fc3f16d231b9372d2b716"
   end
 
   resource "six" do

@@ -67,8 +67,8 @@ class Qmk < Formula
   end
 
   resource "milc" do
-    url "https://files.pythonhosted.org/packages/af/e3/14fade696e39b073a03aadb8703015e1b6e0d2218921c987ac23a8c1070a/milc-1.0.12.tar.gz"
-    sha256 "80080302bbc5420cd5df1bfde2b2ab06255571c6b7e0565fe8fb77ef45615d81"
+    url "https://files.pythonhosted.org/packages/a9/35/c99f0a9c696f6c54ffc62e080fd216c861105ae4f5d0584d0d3198dcb000/milc-1.0.13.tar.gz"
+    sha256 "ffed65c7daa9548116e5f3dbd8fd2f710957de164d64946e36974160140359e6"
   end
 
   resource "nose2" do
@@ -87,8 +87,8 @@ class Qmk < Formula
   end
 
   resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/29/60/8ff9dcb5eac7f4da327ba9ecb74e1ad783b2d32423c06ef599e48c79b1e1/Pygments-2.7.3.tar.gz"
-    sha256 "ccf3acacf3782cbed4a989426012f1c535c9a90d3a7fc3f16d231b9372d2b716"
+    url "https://files.pythonhosted.org/packages/e1/86/8059180e8217299079d8719c6e23d674aadaba0b1939e25e0cc15dcf075b/Pygments-2.7.4.tar.gz"
+    sha256 "df49d09b498e83c1a73128295860250b0b7edd4c723a32e9bc0d295c7c2ec337"
   end
 
   resource "pyrsistent" do

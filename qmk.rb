@@ -67,8 +67,8 @@ class Qmk < Formula
   end
 
   resource "milc" do
-    url "https://files.pythonhosted.org/packages/a9/35/c99f0a9c696f6c54ffc62e080fd216c861105ae4f5d0584d0d3198dcb000/milc-1.0.13.tar.gz"
-    sha256 "ffed65c7daa9548116e5f3dbd8fd2f710957de164d64946e36974160140359e6"
+    url "https://files.pythonhosted.org/packages/30/94/224ff4e1b021256e2397ca91560080c17034b7be37e867ea017f8a0d168d/milc-1.1.0.tar.gz"
+    sha256 "683659fc82304745796d9f9322d3de46306a10c4feae7fc304a82199d6f68c6b"
   end
 
   resource "nose2" do

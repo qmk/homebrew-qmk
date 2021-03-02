@@ -3,8 +3,8 @@ class Qmk < Formula
 
   desc "Quantum Mechanical Keyboard (QMK) Firmware"
   homepage "https://docs.qmk.fm/"
-  url "https://files.pythonhosted.org/packages/18/e0/58ac034a7c4761d2cbc0917f31af1cc02ce0ff388169f2a4aaa341648446/qmk-0.0.39.tar.gz"
-  sha256 "21532ca4daa40c01f0727a162f9b67e5cd070cacfc636739b87460065a5f1863"
+  url "https://files.pythonhosted.org/packages/72/99/a5afd8110adff91cfc5f7327ebb8666c63c2fd498246190db2b59763ab16/qmk-0.0.40.tar.gz"
+  sha256 "b4c051d2cb922dda1561069d7d98e9300071d37a27d96610cc5cc703eccb5d06"
 
   depends_on "avrdude"
   depends_on "bootloadhid"
@@ -15,6 +15,7 @@ class Qmk < Formula
   depends_on "osx-cross/avr/avr-gcc@8"
   depends_on "python"
   depends_on "teensy_loader_cli"
+  depends_on "mdloader"
 
   resource "appdirs" do
     url "https://files.pythonhosted.org/packages/d7/d8/05696357e0311f5b5c316d7b95f46c669dd9c15aaeecbb48c7d0aeb88c40/appdirs-1.4.4.tar.gz"
@@ -37,8 +38,8 @@ class Qmk < Formula
   end
 
   resource "coverage" do
-    url "https://files.pythonhosted.org/packages/40/05/2c1d1405edeec38114abcd404f15a35a41029b89d0514aa8ad11ffcbde81/coverage-5.3.1.tar.gz"
-    sha256 "38f16b1317b8dd82df67ed5daa5f5e7c959e46579840d77a67a4ceb9cef0a50b"
+    url "https://files.pythonhosted.org/packages/38/df/d5e67851e83948def768d7fb1a0fd373665b20f56ff63ed220c6cd16cb11/coverage-5.5.tar.gz"
+    sha256 "ebe78fe9a0e874362175b02371bdfbee64d8edc42a044253ddf4ee7d3c15212c"
   end
 
   resource "dotty-dict" do
@@ -72,8 +73,8 @@ class Qmk < Formula
   end
 
   resource "nose2" do
-    url "https://files.pythonhosted.org/packages/55/5f/503f9e0dfb28f9677288512e4d71e43fbd660cf600cef4d557cdfba3ee1b/nose2-0.9.2.tar.gz"
-    sha256 "8762f77925bbafcdf38331e0e2ee718756fb75ff74b1f9097cd08731ad59ab5e"
+    url "https://files.pythonhosted.org/packages/b5/6d/26c2edff2c51bbb266c17d3c402e0ca3624fee8786c1329bcc59d1d7e879/nose2-0.10.0.tar.gz"
+    sha256 "886ba617a96de0130c54b24479bd5c2d74d5c940d40f3809c3a275511a0c4a60"
   end
 
   resource "pycodestyle" do
@@ -87,8 +88,8 @@ class Qmk < Formula
   end
 
   resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/e1/86/8059180e8217299079d8719c6e23d674aadaba0b1939e25e0cc15dcf075b/Pygments-2.7.4.tar.gz"
-    sha256 "df49d09b498e83c1a73128295860250b0b7edd4c723a32e9bc0d295c7c2ec337"
+    url "https://files.pythonhosted.org/packages/19/d0/dec5604a275b19b0ebd2b9c43730ce39549c8cd8602043eaf40c541a7256/Pygments-2.8.0.tar.gz"
+    sha256 "37a13ba168a02ac54cc5891a42b1caec333e59b66addb7fa633ea8a6d73445c0"
   end
 
   resource "pyrsistent" do

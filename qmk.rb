@@ -3,8 +3,8 @@ class Qmk < Formula
 
   desc "Quantum Mechanical Keyboard (QMK) Firmware"
   homepage "https://docs.qmk.fm/"
-  url "https://files.pythonhosted.org/packages/72/99/a5afd8110adff91cfc5f7327ebb8666c63c2fd498246190db2b59763ab16/qmk-0.0.40.tar.gz"
-  sha256 "b4c051d2cb922dda1561069d7d98e9300071d37a27d96610cc5cc703eccb5d06"
+  url "https://files.pythonhosted.org/packages/99/bb/131bbeab7521c3ca57c6193c03019026bd9115bc6f396b5366ca44c67da8/qmk-0.0.45.tar.gz"
+  sha256 "43f297f36b21d68c34c5efa0ce1449dddb2e28753f80939cadf761ee7a2a0901"
 
   depends_on "avrdude"
   depends_on "bootloadhid"
@@ -48,8 +48,8 @@ class Qmk < Formula
   end
 
   resource "flake8" do
-    url "https://files.pythonhosted.org/packages/71/6a/b3341ef7e7f3585add027d876a7d9837cdfe3320b6c6b5fd0cddfa9ceeac/flake8-3.8.4.tar.gz"
-    sha256 "aadae8761ec651813c24be05c6f7b4680857ef6afaae4651a4eccaef97ce6c3b"
+    url "https://files.pythonhosted.org/packages/76/ef/63ca8e9026a942af5da9380481c51d9a51326af65d8051fc166ab858bbdb/flake8-3.9.0.tar.gz"
+    sha256 "78873e372b12b093da7b5e5ed302e8ad9e988b38b063b61ad937f26ca58fc5f0"
   end
 
   resource "hjson" do
@@ -68,8 +68,8 @@ class Qmk < Formula
   end
 
   resource "milc" do
-    url "https://files.pythonhosted.org/packages/30/94/224ff4e1b021256e2397ca91560080c17034b7be37e867ea017f8a0d168d/milc-1.1.0.tar.gz"
-    sha256 "683659fc82304745796d9f9322d3de46306a10c4feae7fc304a82199d6f68c6b"
+    url "https://files.pythonhosted.org/packages/d0/fb/cfe944716d2f59f7212e65b19e897628a4ba5d9a796a0fce37704c0c817d/milc-1.3.0.tar.gz"
+    sha256 "a9d0299aaaef7a3f00010589c3c0d0669798467e397580620a68e9290b36cdda"
   end
 
   resource "nose2" do
@@ -78,18 +78,18 @@ class Qmk < Formula
   end
 
   resource "pycodestyle" do
-    url "https://files.pythonhosted.org/packages/bb/82/0df047a5347d607be504ad5faa255caa7919562962b934f9372b157e8a70/pycodestyle-2.6.0.tar.gz"
-    sha256 "c58a7d2815e0e8d7972bf1803331fb0152f867bd89adf8a01dfd55085434192e"
+    url "https://files.pythonhosted.org/packages/02/b3/c832123f2699892c715fcdfebb1a8fdeffa11bb7b2350e46ecdd76b45a20/pycodestyle-2.7.0.tar.gz"
+    sha256 "c389c1d06bf7904078ca03399a4816f974a1d590090fecea0c63ec26ebaf1cef"
   end
 
   resource "pyflakes" do
-    url "https://files.pythonhosted.org/packages/f1/e2/e02fc89959619590eec0c35f366902535ade2728479fc3082c8af8840013/pyflakes-2.2.0.tar.gz"
-    sha256 "35b2d75ee967ea93b55750aa9edbbf72813e06a66ba54438df2cfac9e3c27fc8"
+    url "https://files.pythonhosted.org/packages/a8/0f/0dc480da9162749bf629dca76570972dd9cce5bedc60196a3c912875c87d/pyflakes-2.3.1.tar.gz"
+    sha256 "f5bc8ecabc05bb9d291eb5203d6810b49040f6ff446a756326104746cc00c1db"
   end
 
   resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/19/d0/dec5604a275b19b0ebd2b9c43730ce39549c8cd8602043eaf40c541a7256/Pygments-2.8.0.tar.gz"
-    sha256 "37a13ba168a02ac54cc5891a42b1caec333e59b66addb7fa633ea8a6d73445c0"
+    url "https://files.pythonhosted.org/packages/15/9d/bc9047ca1eee944cc245f3649feea6eecde3f38011ee9b8a6a64fb7088cd/Pygments-2.8.1.tar.gz"
+    sha256 "2656e1a6edcdabf4275f9a3640db59fd5de107d88e8663c5d4e9a0fa62f77f94"
   end
 
   resource "pyrsistent" do
@@ -98,8 +98,8 @@ class Qmk < Formula
   end
 
   resource "setuptools-scm" do
-    url "https://files.pythonhosted.org/packages/af/df/f8aa8a78d4d29e0cffa4512e9bc223ed02f24893fe1837c6cee2749ebd67/setuptools_scm-5.0.1.tar.gz"
-    sha256 "c85b6b46d0edd40d2301038cdea96bb6adc14d62ef943e75afb08b3e7bcf142a"
+    url "https://files.pythonhosted.org/packages/57/38/930b1241372a9f266a7df2b184fb9d4f497c2cef2e016b014f82f541fe7c/setuptools_scm-6.0.1.tar.gz"
+    sha256 "d1925a69cb07e9b29416a275b9fadb009a23c148ace905b2fb220649a6c18e92"
   end
 
   resource "six" do
@@ -108,8 +108,8 @@ class Qmk < Formula
   end
 
   resource "yapf" do
-    url "https://files.pythonhosted.org/packages/65/44/c2aa8743cada222eaede6b9bd4b644e84f04eaa6dede2258ec7562b705d3/yapf-0.30.0.tar.gz"
-    sha256 "3000abee4c28daebad55da6c85f3cd07b8062ce48e2e9943c8da1b9667d48427"
+    url "https://files.pythonhosted.org/packages/85/60/8532f7ca17cea13de00e80e2fe1e6bd59a9379856706a027536b19daf0d3/yapf-0.31.0.tar.gz"
+    sha256 "408fb9a2b254c302f49db83c59f9aa0b4b0fd0ec25be3a5c51181327922ff63d"
   end
 
   def install

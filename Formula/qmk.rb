@@ -3,8 +3,8 @@ class Qmk < Formula
 
   desc "Quantum Mechanical Keyboard (QMK) Firmware"
   homepage "https://docs.qmk.fm/"
-  url "https://files.pythonhosted.org/packages/ef/7b/42cb72a174f6812329cb9a4f4752e1d2191d86e55bf2110068079d8ba227/qmk-0.1.0.tar.gz"
-  sha256 "76654b2fff92857f04201cdea3effc8af1f6039b4fcbe64157edb62666928251"
+  url "https://files.pythonhosted.org/packages/4c/d9/7e7f811b3f8b9851b6316f5580a25dadcf168ded06abf34d48879446bb96/qmk-0.2.0.tar.gz"
+  sha256 "569fb1803e2f4061039776351a62edea0885c6f9b66c74a6b9bb53c9b00dcf71"
 
   depends_on "avrdude"
   depends_on "bootloadhid"
@@ -42,11 +42,6 @@ class Qmk < Formula
   resource "coverage" do
     url "https://files.pythonhosted.org/packages/38/df/d5e67851e83948def768d7fb1a0fd373665b20f56ff63ed220c6cd16cb11/coverage-5.5.tar.gz"
     sha256 "ebe78fe9a0e874362175b02371bdfbee64d8edc42a044253ddf4ee7d3c15212c"
-  end
-
-  resource "dotty-dict" do
-    url "https://files.pythonhosted.org/packages/a7/da/fc25898c4edb9549b2aac0f7329fec027d654e94d4c4b89849d4c5fff0a4/dotty_dict-1.3.0.tar.gz"
-    sha256 "eb0035a3629ecd84397a68f1f42f1e94abd1c34577a19cd3eacad331ee7cbaf0"
   end
 
   resource "flake8" do
@@ -110,18 +105,18 @@ class Qmk < Formula
   end
 
   resource "pyrsistent" do
-    url "https://files.pythonhosted.org/packages/4d/70/fd441df751ba8b620e03fd2d2d9ca902103119616f0f6cc42e6405035062/pyrsistent-0.17.3.tar.gz"
-    sha256 "2e636185d9eb976a18a8a8e96efce62f2905fea90041958d8cc2a189756ebf3e"
+    url "https://files.pythonhosted.org/packages/f4/d7/0fa558c4fb00f15aabc6d42d365fcca7a15fcc1091cd0f5784a14f390b7f/pyrsistent-0.18.0.tar.gz"
+    sha256 "773c781216f8c2900b42a7b638d5b517bb134ae1acbebe4d1e8f1f41ea60eb4b"
   end
 
   resource "pyusb" do
-    url "https://files.pythonhosted.org/packages/b9/8d/25c4e446a07e918eb39b5af25c4a83a89db95ae44e4ed5a46c3c53b0a4d6/pyusb-1.1.1.tar.gz"
-    sha256 "7d449ad916ce58aff60b89aae0b65ac130f289c24d6a5b7b317742eccffafc38"
+    url "https://files.pythonhosted.org/packages/d9/6e/433a5614132576289b8643fe598dd5d51b16e130fd591564be952e15bb45/pyusb-1.2.1.tar.gz"
+    sha256 "a4cc7404a203144754164b8b40994e2849fde1cfff06b08492f12fff9d9de7b9"
   end
 
-  resource "setuptools-scm" do
-    url "https://files.pythonhosted.org/packages/57/38/930b1241372a9f266a7df2b184fb9d4f497c2cef2e016b014f82f541fe7c/setuptools_scm-6.0.1.tar.gz"
-    sha256 "d1925a69cb07e9b29416a275b9fadb009a23c148ace905b2fb220649a6c18e92"
+  resource "qmk-dotty-dict" do
+    url "https://files.pythonhosted.org/packages/8d/66/19e6e56e6839c495e5fcb258b07bbd4a7879a2865de84c35e12074484ea6/qmk_dotty_dict-1.3.0.post1.tar.gz"
+    sha256 "3b611e393660bfaa6835c68e94784bae80fe07b8490978b5ecab03a0d2fc7ea2"
   end
 
   resource "six" do

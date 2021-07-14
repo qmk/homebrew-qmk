@@ -5,6 +5,12 @@ class Mdloader < Formula
   sha256 "2b2e88e2d66165f2160a0673dcacd94dbcb4f96c855fc0b4923ae569cd8f9e34"
   head "https://github.com/Massdrop/mdloader"
 
+  bottle do
+    root_url "https://github.com/qmk/homebrew-qmk/releases/download/mdloader-1.0.5"
+    rebuild 1
+    sha256 catalina: "ea59966f9a916b3f8eb468e38dc070b19fea0bb5130e85fd7abf89ffd98d6139"
+  end
+
   # Search for applet in pkgshare, then cwd
   patch do
     url "https://raw.githubusercontent.com/qmk/homebrew-qmk/e0aec49182abab878b444a8321c6b765af60d6df/Patch/mdloader-applet-path.patch"

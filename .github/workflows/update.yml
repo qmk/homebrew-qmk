@@ -1,0 +1,22 @@
+name: Autocreate PR for QMK CLI updates
+on:
+  schedule:
+    - cron: '45 5 * * *'
+
+jobs:
+  update:
+    runs-on: macos-latest
+    steps:
+      - name: Update Homebrew formula
+        uses: dawidd6/action-homebrew-bump-formula@v3
+        with:
+          # Required, custom GitHub access token with only the 'public_repo' scope enabled
+          token: ${{secrets.QMK_BOT_TOKEN}}
+          # Bump all outdated formulae in this tap
+          tap: qmk/homebrew-qmk
+          # Bump only these formulae if outdated
+          formula: qmk
+          # Optional, if don't want to check for already open PRs
+          force: false # true
+          # Need to set this input if want to use `brew livecheck`
+          livecheck: true

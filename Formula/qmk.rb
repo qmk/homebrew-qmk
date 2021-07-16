@@ -6,6 +6,8 @@ class Qmk < Formula
   url "https://files.pythonhosted.org/packages/4c/d9/7e7f811b3f8b9851b6316f5580a25dadcf168ded06abf34d48879446bb96/qmk-0.2.0.tar.gz"
   sha256 "569fb1803e2f4061039776351a62edea0885c6f9b66c74a6b9bb53c9b00dcf71"
 
+  revision 1
+
   depends_on "avrdude"
   depends_on "bootloadhid"
   depends_on "clang-format"

@@ -6,6 +6,11 @@ class HidBootloaderCli < Formula
   license "GPL-3.0-only"
   head "https://github.com/abcminiuser/lufa.git"
 
+  bottle do
+    root_url "https://github.com/qmk/homebrew-qmk/releases/download/hid_bootloader_cli-210130"
+    sha256 cellar: :any_skip_relocation, catalina: "80f4744b2150d84060347dd73cdc90db333f09a39ba16150ba8beb3afbf3642f"
+  end
+
   def install
     chdir "Bootloaders/HID/HostLoaderApp" do
       ENV["OS"] = "MACOSX"

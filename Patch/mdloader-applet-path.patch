@@ -1,5 +1,3 @@
-diff --git a/Makefile b/Makefile
-index cbffc63..d7b6cd7 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -1,7 +1,7 @@
@@ -11,8 +9,6 @@ index cbffc63..d7b6cd7 100644
  
  SRCFILES = mdloader_common.c mdloader_parser.c
  ifeq ($(OS),Windows_NT)
-diff --git a/mdloader_common.c b/mdloader_common.c
-index 4321de2..59f81a3 100644
 --- a/mdloader_common.c
 +++ b/mdloader_common.c
 @@ -179,6 +179,12 @@ int print_mail(mailbox_t *mail)
@@ -61,8 +57,6 @@ index 4321de2..59f81a3 100644
          if (filebytes == 0)
          {
              printf("Error: Applet file is empty!\n");
-diff --git a/mdloader_common.h b/mdloader_common.h
-index 0bd8575..2d75d6b 100644
 --- a/mdloader_common.h
 +++ b/mdloader_common.h
 @@ -47,6 +47,12 @@

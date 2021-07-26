@@ -24,7 +24,7 @@
  //Run applet command and wait for device response
  //Return 1 on sucess, 0 on failure
  int run_applet(mailbox_t *mail)
-@@ -754,18 +760,20 @@ int main(int argc, char *argv[])
+@@ -754,14 +760,22 @@ int main(int argc, char *argv[])
      //Load applet
      FILE *fIn;
      char appletfname[128] = "";
@@ -39,16 +39,16 @@
  
 -    fIn = fopen(appletfname, "rb");
 +    fIn = fopen(appletfpath, "rb"); // Try in CWD first
-     if (!fIn)
-     {
--        printf("Error: Could not open applet file: %s\n", appletfname);
--        goto closePort;
++    if (!fIn)
++    {
 +        get_applet_path(appletfname, appletfpath); // If not in CWD, look in $PREFIX/share/mdloader
 +        fIn = fopen(appletfpath, "rb");
-     }
-     else
++    }
++
+     if (!fIn)
      {
-@@ -773,7 +781,7 @@ int main(int argc, char *argv[])
+         printf("Error: Could not open applet file: %s\n", appletfname);
+@@ -773,7 +787,7 @@ int main(int argc, char *argv[])
          int filebytes;
          int readbytes;
  

@@ -3,8 +3,8 @@ class Qmk < Formula
 
   desc "Quantum Mechanical Keyboard (QMK) Firmware"
   homepage "https://docs.qmk.fm/"
-  url "https://files.pythonhosted.org/packages/a6/73/623bbfb53eaa69ba0781f675024c39c54618d145cd2e121c25b8b96a70c2/qmk-0.2.2.tar.gz"
-  sha256 "1d5ab822d61692e5608c7268c588b1a6630159d9c4354e0010d220cb89d28ea2"
+  url "https://files.pythonhosted.org/packages/22/ef/5830d1b453a5a53ef62b0660ac691d1a9cdb74c05eded9524d3e27c45c1c/qmk-0.3.0.tar.gz"
+  sha256 "70458d6a941f24349bccf8dae8ecc36f73c0256e1ad4ba452d380625db2612a8"
 
   bottle do
     root_url "https://github.com/qmk/homebrew-qmk/releases/download/qmk-0.2.2"
@@ -85,8 +85,8 @@ class Qmk < Formula
   end
 
   resource "milc" do
-    url "https://files.pythonhosted.org/packages/3d/a0/6efa3893172a788b17a2642f77f6c77e32813aa882b1e0c23fcb13e67557/milc-1.4.2.tar.gz"
-    sha256 "c6b2f19e3196b00a0060f8c883533e356f2054a9f81692b7b97ccee0d01626fd"
+    url "https://files.pythonhosted.org/packages/dd/26/4eb377f718ba7cdda62c8a50a0fc28e3cea35cb8edec89a5fab6502fb921/milc-1.5.0.tar.gz"
+    sha256 "053940c5686b1ed61d5b7e48667dee7eb2e7414efb03eb376d9cb3440f36d5f2"
   end
 
   resource "nose2" do

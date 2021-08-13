@@ -3,8 +3,8 @@ class Qmk < Formula
 
   desc "Quantum Mechanical Keyboard (QMK) Firmware"
   homepage "https://docs.qmk.fm/"
-  url "https://files.pythonhosted.org/packages/7e/cc/0c024ca5d7f0aba53cec961bd5eba24d3a5ff8fd04c82d7dbcf1d983a857/qmk-0.3.3.tar.gz"
-  sha256 "cbe79d36cadcc227e6571dec9218fd5d123c58169621647f27775a3befca65eb"
+  url "https://files.pythonhosted.org/packages/22/ef/5830d1b453a5a53ef62b0660ac691d1a9cdb74c05eded9524d3e27c45c1c/qmk-0.3.0.tar.gz"
+  sha256 "70458d6a941f24349bccf8dae8ecc36f73c0256e1ad4ba452d380625db2612a8"
 
   bottle do
     root_url "https://github.com/qmk/homebrew-qmk/releases/download/qmk-0.3.0"
@@ -49,6 +49,11 @@ class Qmk < Formula
     sha256 "ebe78fe9a0e874362175b02371bdfbee64d8edc42a044253ddf4ee7d3c15212c"
   end
 
+  resource "flake8" do
+    url "https://files.pythonhosted.org/packages/9e/47/15b267dfe7e03dca4c4c06e7eadbd55ef4dfd368b13a0bab36d708b14366/flake8-3.9.2.tar.gz"
+    sha256 "07528381786f2a6237b061f6e96610a4167b226cb926e2aa2b6b1d78057c576b"
+  end
+
   resource "halo" do
     url "https://files.pythonhosted.org/packages/ee/48/d53580d30b1fabf25d0d1fcc3f5b26d08d2ac75a1890ff6d262f9f027436/halo-0.0.31.tar.gz"
     sha256 "7b67a3521ee91d53b7152d4ee3452811e1d2a6321975137762eb3d70063cc9d6"
@@ -57,6 +62,16 @@ class Qmk < Formula
   resource "hid" do
     url "https://files.pythonhosted.org/packages/96/ba/e1923a3f7f865cd9f3c388bf6a42b4ed149ae1a00e68f71eec49ea3d3da4/hid-1.0.4.tar.gz"
     sha256 "f61b0382f37a334bc8ba8604bc84b94875ee4f594fbbaf82b2c3b3e827883fc1"
+  end
+
+  resource "hjson" do
+    url "https://files.pythonhosted.org/packages/bd/dd/c0eb550f14daf2a15d387dd1479dd4880fefcfa66d42e64454feecc18331/hjson-3.0.2.tar.gz"
+    sha256 "2838fd7200e5839ea4516ece953f3a19892c41089f0d933ba3f68e596aacfcd5"
+  end
+
+  resource "jsonschema" do
+    url "https://files.pythonhosted.org/packages/69/11/a69e2a3c01b324a77d3a7c0570faa372e8448b666300c4117a516f8b1212/jsonschema-3.2.0.tar.gz"
+    sha256 "c8a85b28d377cc7737e46e2d9f2b4f44ee3c0e1deac6bf46ddefc7187d30797a"
   end
 
   resource "log-symbols" do
@@ -74,6 +89,11 @@ class Qmk < Formula
     sha256 "053940c5686b1ed61d5b7e48667dee7eb2e7414efb03eb376d9cb3440f36d5f2"
   end
 
+  resource "nose2" do
+    url "https://files.pythonhosted.org/packages/b5/6d/26c2edff2c51bbb266c17d3c402e0ca3624fee8786c1329bcc59d1d7e879/nose2-0.10.0.tar.gz"
+    sha256 "886ba617a96de0130c54b24479bd5c2d74d5c940d40f3809c3a275511a0c4a60"
+  end
+
   resource "pycodestyle" do
     url "https://files.pythonhosted.org/packages/02/b3/c832123f2699892c715fcdfebb1a8fdeffa11bb7b2350e46ecdd76b45a20/pycodestyle-2.7.0.tar.gz"
     sha256 "c389c1d06bf7904078ca03399a4816f974a1d590090fecea0c63ec26ebaf1cef"
@@ -84,6 +104,11 @@ class Qmk < Formula
     sha256 "f5bc8ecabc05bb9d291eb5203d6810b49040f6ff446a756326104746cc00c1db"
   end
 
+  resource "Pygments" do
+    url "https://files.pythonhosted.org/packages/ba/6e/7a7c13c21d8a4a7f82ccbfe257a045890d4dbf18c023f985f565f97393e3/Pygments-2.9.0.tar.gz"
+    sha256 "a18f47b506a429f6f4b9df81bb02beab9ca21d0a5fee38ed15aef65f0545519f"
+  end
+
   resource "pyrsistent" do
     url "https://files.pythonhosted.org/packages/f4/d7/0fa558c4fb00f15aabc6d42d365fcca7a15fcc1091cd0f5784a14f390b7f/pyrsistent-0.18.0.tar.gz"
     sha256 "773c781216f8c2900b42a7b638d5b517bb134ae1acbebe4d1e8f1f41ea60eb4b"
@@ -92,6 +117,11 @@ class Qmk < Formula
   resource "pyusb" do
     url "https://files.pythonhosted.org/packages/d9/6e/433a5614132576289b8643fe598dd5d51b16e130fd591564be952e15bb45/pyusb-1.2.1.tar.gz"
     sha256 "a4cc7404a203144754164b8b40994e2849fde1cfff06b08492f12fff9d9de7b9"
+  end
+
+  resource "qmk-dotty-dict" do
+    url "https://files.pythonhosted.org/packages/8d/66/19e6e56e6839c495e5fcb258b07bbd4a7879a2865de84c35e12074484ea6/qmk_dotty_dict-1.3.0.post1.tar.gz"
+    sha256 "3b611e393660bfaa6835c68e94784bae80fe07b8490978b5ecab03a0d2fc7ea2"
   end
 
   resource "six" do
@@ -107,6 +137,11 @@ class Qmk < Formula
   resource "termcolor" do
     url "https://files.pythonhosted.org/packages/8a/48/a76be51647d0eb9f10e2a4511bf3ffb8cc1e6b14e9e4fab46173aa79f981/termcolor-1.1.0.tar.gz"
     sha256 "1d6d69ce66211143803fbc56652b41d73b4a400a2891d7bf7a1cdf4c02de613b"
+  end
+
+  resource "yapf" do
+    url "https://files.pythonhosted.org/packages/85/60/8532f7ca17cea13de00e80e2fe1e6bd59a9379856706a027536b19daf0d3/yapf-0.31.0.tar.gz"
+    sha256 "408fb9a2b254c302f49db83c59f9aa0b4b0fd0ec25be3a5c51181327922ff63d"
   end
 
   def install

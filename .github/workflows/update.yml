@@ -22,3 +22,6 @@ jobs:
           force: false # true
           # Need to set this input if want to use `brew livecheck`
           livecheck: true
+          message: |
+            **⚠️ Do not merge this PR directly! ⚠️**
+            Label it with `pr-pull` instead to make the bot build and upload the bottle.

@@ -3,8 +3,8 @@ class Qmk < Formula
 
   desc "Quantum Mechanical Keyboard (QMK) Firmware"
   homepage "https://docs.qmk.fm/"
-  url "https://files.pythonhosted.org/packages/11/2d/0a66d8a5174888cea265a5a8ad60a1192da961bd8e1cb7d4824c1b0a4f36/qmk-0.3.5.tar.gz"
-  sha256 "441e949fce05f1277f7fde8f55389e5cd616ef535c8e5254c9df5934b8582fd2"
+  url "https://files.pythonhosted.org/packages/74/c5/2bb4c149162b78c3f2d9451a45e4f0541645c9e88e42738adf98e9181d53/qmk-1.0.0.tar.gz"
+  sha256 "da62eec73c4548cc37b0b9be3937202dc3a301dc2f2663610ecca751a610f9ca"
 
   bottle do
     root_url "https://github.com/qmk/homebrew-qmk/releases/download/qmk-0.3.5"
@@ -44,11 +44,6 @@ class Qmk < Formula
     sha256 "5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"
   end
 
-  resource "coverage" do
-    url "https://files.pythonhosted.org/packages/38/df/d5e67851e83948def768d7fb1a0fd373665b20f56ff63ed220c6cd16cb11/coverage-5.5.tar.gz"
-    sha256 "ebe78fe9a0e874362175b02371bdfbee64d8edc42a044253ddf4ee7d3c15212c"
-  end
-
   resource "halo" do
     url "https://files.pythonhosted.org/packages/ee/48/d53580d30b1fabf25d0d1fcc3f5b26d08d2ac75a1890ff6d262f9f027436/halo-0.0.31.tar.gz"
     sha256 "7b67a3521ee91d53b7152d4ee3452811e1d2a6321975137762eb3d70063cc9d6"
@@ -59,29 +54,29 @@ class Qmk < Formula
     sha256 "f61b0382f37a334bc8ba8604bc84b94875ee4f594fbbaf82b2c3b3e827883fc1"
   end
 
+  resource "hjson" do
+    url "https://files.pythonhosted.org/packages/bd/dd/c0eb550f14daf2a15d387dd1479dd4880fefcfa66d42e64454feecc18331/hjson-3.0.2.tar.gz"
+    sha256 "2838fd7200e5839ea4516ece953f3a19892c41089f0d933ba3f68e596aacfcd5"
+  end
+
+  resource "jsonschema" do
+    url "https://files.pythonhosted.org/packages/69/11/a69e2a3c01b324a77d3a7c0570faa372e8448b666300c4117a516f8b1212/jsonschema-3.2.0.tar.gz"
+    sha256 "c8a85b28d377cc7737e46e2d9f2b4f44ee3c0e1deac6bf46ddefc7187d30797a"
+  end
+
   resource "log-symbols" do
     url "https://files.pythonhosted.org/packages/45/87/e86645d758a4401c8c81914b6a88470634d1785c9ad09823fa4a1bd89250/log_symbols-0.0.14.tar.gz"
     sha256 "cf0bbc6fe1a8e53f0d174a716bc625c4f87043cc21eb55dd8a740cfe22680556"
   end
 
-  resource "mccabe" do
-    url "https://files.pythonhosted.org/packages/06/18/fa675aa501e11d6d6ca0ae73a101b2f3571a565e0f7d38e062eec18a91ee/mccabe-0.6.1.tar.gz"
-    sha256 "dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f"
-  end
-
   resource "milc" do
-    url "https://files.pythonhosted.org/packages/dd/26/4eb377f718ba7cdda62c8a50a0fc28e3cea35cb8edec89a5fab6502fb921/milc-1.5.0.tar.gz"
-    sha256 "053940c5686b1ed61d5b7e48667dee7eb2e7414efb03eb376d9cb3440f36d5f2"
+    url "https://files.pythonhosted.org/packages/8a/fe/72c14830a19bb97172fb2c4d42656c6b9d7c2d6d47d67c78fab0d15e6019/milc-1.6.2.tar.gz"
+    sha256 "779710a0b9300bef3c5748158887e6c734659e147d55548d9e4701d7a7d5dddf"
   end
 
-  resource "pycodestyle" do
-    url "https://files.pythonhosted.org/packages/02/b3/c832123f2699892c715fcdfebb1a8fdeffa11bb7b2350e46ecdd76b45a20/pycodestyle-2.7.0.tar.gz"
-    sha256 "c389c1d06bf7904078ca03399a4816f974a1d590090fecea0c63ec26ebaf1cef"
-  end
-
-  resource "pyflakes" do
-    url "https://files.pythonhosted.org/packages/a8/0f/0dc480da9162749bf629dca76570972dd9cce5bedc60196a3c912875c87d/pyflakes-2.3.1.tar.gz"
-    sha256 "f5bc8ecabc05bb9d291eb5203d6810b49040f6ff446a756326104746cc00c1db"
+  resource "Pygments" do
+    url "https://files.pythonhosted.org/packages/b7/b3/5cba26637fe43500d4568d0ee7b7362de1fb29c0e158d50b4b69e9a40422/Pygments-2.10.0.tar.gz"
+    sha256 "f398865f7eb6874156579fdf36bc840a03cab64d1cde9e93d68f46a425ec52c6"
   end
 
   resource "pyrsistent" do
@@ -92,6 +87,11 @@ class Qmk < Formula
   resource "pyusb" do
     url "https://files.pythonhosted.org/packages/d9/6e/433a5614132576289b8643fe598dd5d51b16e130fd591564be952e15bb45/pyusb-1.2.1.tar.gz"
     sha256 "a4cc7404a203144754164b8b40994e2849fde1cfff06b08492f12fff9d9de7b9"
+  end
+
+  resource "qmk-dotty-dict" do
+    url "https://files.pythonhosted.org/packages/8d/66/19e6e56e6839c495e5fcb258b07bbd4a7879a2865de84c35e12074484ea6/qmk_dotty_dict-1.3.0.post1.tar.gz"
+    sha256 "3b611e393660bfaa6835c68e94784bae80fe07b8490978b5ecab03a0d2fc7ea2"
   end
 
   resource "six" do

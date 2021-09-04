@@ -24,4 +24,4 @@ jobs:
           livecheck: true
           message: |
             **⚠️ Do not merge this PR directly! ⚠️**
-            Label it with `pr-pull` instead to make the bot build and upload the bottle.
+            Wait for `brew test-bot` to complete, then label it with `pr-pull` instead to make the bot build and upload the bottle.

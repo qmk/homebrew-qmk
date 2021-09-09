@@ -18,6 +18,7 @@ class Qmk < Formula
   depends_on "dfu-util"
   depends_on "hidapi"
   depends_on "libusb"
+  depends_on "make"
   depends_on "mdloader"
   depends_on "osx-cross/arm/arm-gcc-bin@8"
   depends_on "osx-cross/avr/avr-gcc@8"

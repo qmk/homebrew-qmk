@@ -1,8 +1,8 @@
 class Mdloader < Formula
   desc "Massdrop Firmware Loader"
   homepage "https://github.com/Massdrop/mdloader"
-  url "https://github.com/Massdrop/mdloader/archive/1.0.5.tar.gz"
-  sha256 "2b2e88e2d66165f2160a0673dcacd94dbcb4f96c855fc0b4923ae569cd8f9e34"
+  url "https://github.com/Massdrop/mdloader/archive/1.0.6.tar.gz"
+  sha256 "1663e1e1f67b48e5d16802587c603092b43aab37020112931a39d6fc65afe94e"
   head "https://github.com/Massdrop/mdloader"
 
   bottle do
@@ -11,21 +11,14 @@ class Mdloader < Formula
     sha256 catalina: "ea59966f9a916b3f8eb468e38dc070b19fea0bb5130e85fd7abf89ffd98d6139"
   end
 
-  # Search for applet in pkgshare, then cwd
-  patch do
-    url "https://raw.githubusercontent.com/qmk/homebrew-qmk/e0aec49182abab878b444a8321c6b765af60d6df/Patch/mdloader-applet-path.patch"
-    sha256 "0010e866d4f28db036efbe9c9a13c91b7d0ffb1451f890d066666221e0fec42c"
-  end
-
   def install
     system "make", "prefix=#{prefix}"
 
     Dir.chdir "build"
     bin.install "mdloader"
-    pkgshare.install Dir.glob("applet-*.bin")
   end
 
   test do
-    assert_equal `mdloader --version`.lines.first, "Massdrop Loader 1.05\n"
+    assert_equal `mdloader --version`.lines.first, "Massdrop Loader 1.06\n"
   end
 end

@@ -6,7 +6,6 @@ class Qmk < Formula
   url "https://files.pythonhosted.org/packages/76/e4/6f4d2a68ee2fefd1eef01c84cb0ec2a177d40a9f9d3bf15a5416f856aeee/qmk-1.1.0.tar.gz"
   sha256 "771577c9e68eb7fe08969bab36aeb420713a525062dce52a06eda40da8cda5e1"
 
-
   bottle do
     root_url "https://github.com/qmk/homebrew-qmk/releases/download/qmk-1.0.0_1"
     sha256 cellar: :any_skip_relocation, catalina: "a57083d872d52469c4c696d1031522d253cf12b45e8eeab764b888fd8eab8a52"

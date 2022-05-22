@@ -3,10 +3,8 @@ class Qmk < Formula
 
   desc "Quantum Mechanical Keyboard (QMK) Firmware"
   homepage "https://docs.qmk.fm/"
-  url "https://files.pythonhosted.org/packages/74/c5/2bb4c149162b78c3f2d9451a45e4f0541645c9e88e42738adf98e9181d53/qmk-1.0.0.tar.gz"
-  sha256 "da62eec73c4548cc37b0b9be3937202dc3a301dc2f2663610ecca751a610f9ca"
-
-  revision 1
+  url "https://files.pythonhosted.org/packages/76/e4/6f4d2a68ee2fefd1eef01c84cb0ec2a177d40a9f9d3bf15a5416f856aeee/qmk-1.1.0.tar.gz"
+  sha256 "771577c9e68eb7fe08969bab36aeb420713a525062dce52a06eda40da8cda5e1"
 
   bottle do
     root_url "https://github.com/qmk/homebrew-qmk/releases/download/qmk-1.0.0_1"
@@ -24,6 +22,7 @@ class Qmk < Formula
   depends_on "mdloader"
   depends_on "osx-cross/arm/arm-gcc-bin@8"
   depends_on "osx-cross/avr/avr-gcc@8"
+  depends_on "pillow"
   depends_on "python"
   depends_on "teensy_loader_cli"
 
@@ -33,13 +32,13 @@ class Qmk < Formula
   end
 
   resource "argcomplete" do
-    url "https://files.pythonhosted.org/packages/6a/b4/3b1d48b61be122c95f4a770b2f42fc2552857616feba4d51f34611bd1352/argcomplete-1.12.3.tar.gz"
-    sha256 "2c7dbffd8c045ea534921e63b0be6fe65e88599990d8dc408ac8c542b72a5445"
+    url "https://files.pythonhosted.org/packages/05/f8/67851ae4fe5396ba6868c5d84219b81ea6a5d53991a6853616095c30adc0/argcomplete-2.0.0.tar.gz"
+    sha256 "6372ad78c89d662035101418ae253668445b391755cfe94ea52f1b9d22425b20"
   end
 
   resource "attrs" do
-    url "https://files.pythonhosted.org/packages/ed/d6/3ebca4ca65157c12bd08a63e20ac0bdc21ac7f3694040711f9fd073c0ffb/attrs-21.2.0.tar.gz"
-    sha256 "ef6aaac3ca6cd92904cdd0d83f629a15f18053ec84e6432106f7a4d04ae4f5fb"
+    url "https://files.pythonhosted.org/packages/d7/77/ebb15fc26d0f815839ecd897b919ed6d85c050feeb83e100e020df9153d2/attrs-21.4.0.tar.gz"
+    sha256 "626ba8234211db98e869df76230a137c4c40a12d72445c45d5f5b716f076e2fd"
   end
 
   resource "colorama" do
@@ -53,8 +52,8 @@ class Qmk < Formula
   end
 
   resource "hid" do
-    url "https://files.pythonhosted.org/packages/96/ba/e1923a3f7f865cd9f3c388bf6a42b4ed149ae1a00e68f71eec49ea3d3da4/hid-1.0.4.tar.gz"
-    sha256 "f61b0382f37a334bc8ba8604bc84b94875ee4f594fbbaf82b2c3b3e827883fc1"
+    url "https://files.pythonhosted.org/packages/e0/2a/87d8d87343c9be4f839972b0a3bef66b8b4f0d350cda11f2d3d8222f29ab/hid-1.0.5.tar.gz"
+    sha256 "1e954e7f7ab9b7c9dfc78db59504692c17db3b71249492b976b1525b97dbb0e8"
   end
 
   resource "hjson" do
@@ -63,8 +62,8 @@ class Qmk < Formula
   end
 
   resource "jsonschema" do
-    url "https://files.pythonhosted.org/packages/69/11/a69e2a3c01b324a77d3a7c0570faa372e8448b666300c4117a516f8b1212/jsonschema-3.2.0.tar.gz"
-    sha256 "c8a85b28d377cc7737e46e2d9f2b4f44ee3c0e1deac6bf46ddefc7187d30797a"
+    url "https://files.pythonhosted.org/packages/9e/62/93a54db0e44c4de57868a7d638d7a8abce113c8bc43a20b10b1109b2a517/jsonschema-4.5.1.tar.gz"
+    sha256 "7c6d882619340c3347a1bf7315e147e6d3dae439033ae6383d6acb908c101dfc"
   end
 
   resource "log-symbols" do
@@ -73,18 +72,23 @@ class Qmk < Formula
   end
 
   resource "milc" do
-    url "https://files.pythonhosted.org/packages/8a/fe/72c14830a19bb97172fb2c4d42656c6b9d7c2d6d47d67c78fab0d15e6019/milc-1.6.2.tar.gz"
-    sha256 "779710a0b9300bef3c5748158887e6c734659e147d55548d9e4701d7a7d5dddf"
+    url "https://files.pythonhosted.org/packages/92/c0/3377091d68d98f7448e9e3624d6692548efcd98917cc48a69efb650a3eb4/milc-1.6.6.tar.gz"
+    sha256 "a4a1673718aaceefeb62c1799e48825bc6f4e56bfd8ad4a8e341a7622e6ff000"
+  end
+
+  resource "Pillow" do
+    url "https://files.pythonhosted.org/packages/43/6e/59853546226ee6200f9ba6e574d11604b60ad0754d2cbd1c8f3246b70418/Pillow-9.1.1.tar.gz"
+    sha256 "7502539939b53d7565f3d11d87c78e7ec900d3c72945d4ee0e2f250d598309a0"
   end
 
   resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/b7/b3/5cba26637fe43500d4568d0ee7b7362de1fb29c0e158d50b4b69e9a40422/Pygments-2.10.0.tar.gz"
-    sha256 "f398865f7eb6874156579fdf36bc840a03cab64d1cde9e93d68f46a425ec52c6"
+    url "https://files.pythonhosted.org/packages/59/0f/eb10576eb73b5857bc22610cdfc59e424ced4004fe7132c8f2af2cc168d3/Pygments-2.12.0.tar.gz"
+    sha256 "5eb116118f9612ff1ee89ac96437bb6b49e8f04d8a13b514ba26f620208e26eb"
   end
 
   resource "pyrsistent" do
-    url "https://files.pythonhosted.org/packages/f4/d7/0fa558c4fb00f15aabc6d42d365fcca7a15fcc1091cd0f5784a14f390b7f/pyrsistent-0.18.0.tar.gz"
-    sha256 "773c781216f8c2900b42a7b638d5b517bb134ae1acbebe4d1e8f1f41ea60eb4b"
+    url "https://files.pythonhosted.org/packages/42/ac/455fdc7294acc4d4154b904e80d964cc9aae75b087bbf486be04df9f2abd/pyrsistent-0.18.1.tar.gz"
+    sha256 "d4d61f8b993a7255ba714df3aca52700f8125289f84f704cf80916517c46eb96"
   end
 
   resource "pyusb" do

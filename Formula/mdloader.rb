@@ -1,8 +1,8 @@
 class Mdloader < Formula
   desc "Massdrop Firmware Loader"
   homepage "https://github.com/Massdrop/mdloader"
-  url "https://github.com/Massdrop/mdloader/archive/1.0.6.tar.gz"
-  sha256 "1663e1e1f67b48e5d16802587c603092b43aab37020112931a39d6fc65afe94e"
+  url "https://github.com/Massdrop/mdloader/archive/1.0.7.tar.gz"
+  sha256 "a3c47ed285aaa94e9a5c00c84a15798e6d90f1bb13db846cc71cad6eb4a2d7c4"
   head "https://github.com/Massdrop/mdloader"
 
   bottle do
@@ -18,6 +18,6 @@ class Mdloader < Formula
   end
 
   test do
-    assert_equal `mdloader --version`.lines.first, "Massdrop Loader 1.06\n"
+    assert_equal `mdloader --version`.lines.first, "Massdrop Loader 1.07\n"
   end
 end

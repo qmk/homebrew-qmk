@@ -9,7 +9,7 @@ class Qmk < Formula
   bottle do
     root_url "https://github.com/qmk/homebrew-qmk/releases/download/qmk-1.1.0"
     rebuild 1
-    sha256 cellar: :any, catalina: "90f10c34907159f92ffc188b389835609a8a8f1c5f78bb9ecd56de08b6073455"
+    sha256 cellar: :any, catalina: "6146287dc40b39a672f55f6ead06d37265c9f78d07b7e9325cb177110db72ca0"
   end
 
   depends_on "avrdude"

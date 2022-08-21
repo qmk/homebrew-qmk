@@ -7,9 +7,8 @@ class Qmk < Formula
   sha256 "dd028e09ebcd61f8bdf8cb82929dfafc0e007d97a5a3803b45819b4641773269"
 
   bottle do
-    root_url "https://github.com/qmk/homebrew-qmk/releases/download/qmk-1.1.0"
-    rebuild 1
-    sha256 cellar: :any, catalina: "6146287dc40b39a672f55f6ead06d37265c9f78d07b7e9325cb177110db72ca0"
+    root_url "https://github.com/qmk/homebrew-qmk/releases/download/qmk-1.1.1"
+    sha256 cellar: :any, catalina: "d9369075d2786f5f3d39c59596b5e75870ce1630ff8a8f28ddbd6585ab5d1546"
   end
 
   depends_on "avrdude"

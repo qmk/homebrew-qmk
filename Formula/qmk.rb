@@ -5,12 +5,14 @@ class Qmk < Formula
   homepage "https://docs.qmk.fm/"
   url "https://files.pythonhosted.org/packages/52/4a/27caeef7f15316271adaf9d3f03390869be85fd72fbbed950137a5a50900/qmk-1.1.1.tar.gz"
   sha256 "dd028e09ebcd61f8bdf8cb82929dfafc0e007d97a5a3803b45819b4641773269"
+  revision 1
 
   bottle do
     root_url "https://github.com/qmk/homebrew-qmk/releases/download/qmk-1.1.1"
     sha256 cellar: :any, catalina: "d9369075d2786f5f3d39c59596b5e75870ce1630ff8a8f28ddbd6585ab5d1546"
   end
 
+  depends_on "pkg-config" => :build
   depends_on "avrdude"
   depends_on "bootloadhid"
   depends_on "clang-format"
@@ -25,7 +27,6 @@ class Qmk < Formula
   depends_on "pillow"
   depends_on "python"
   depends_on "teensy_loader_cli"
-  depends_on "pkg-config"
 
   resource "appdirs" do
     url "https://files.pythonhosted.org/packages/d7/d8/05696357e0311f5b5c316d7b95f46c669dd9c15aaeecbb48c7d0aeb88c40/appdirs-1.4.4.tar.gz"

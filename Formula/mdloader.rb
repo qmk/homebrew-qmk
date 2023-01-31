@@ -2,7 +2,7 @@ class Mdloader < Formula
   desc "Massdrop Firmware Loader"
   homepage "https://github.com/Massdrop/mdloader"
   url "https://github.com/Massdrop/mdloader/archive/1.0.7.tar.gz"
-  sha256 "a3c47ed285aaa94e9a5c00c84a15798e6d90f1bb13db846cc71cad6eb4a2d7c4"
+  sha256 "0d2d679849c8edbe0b67eaf2bdc69a4a0ced07d009008a01d8f9d81fa8a49b51"
   head "https://github.com/Massdrop/mdloader"
 
   bottle do

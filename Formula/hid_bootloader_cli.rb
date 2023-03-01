@@ -4,7 +4,8 @@ class HidBootloaderCli < Formula
   url "https://github.com/abcminiuser/lufa/archive/refs/tags/LUFA-210130.tar.gz"
   sha256 "9b56921d59a50099cc6a8026248380a10ff518c8d02b547d6e617f71e6038f57"
   license "GPL-3.0-only"
-  head "https://github.com/abcminiuser/lufa.git"
+  revision 1
+  head "https://github.com/abcminiuser/lufa.git", branch: "master"
 
   bottle do
     root_url "https://github.com/qmk/homebrew-qmk/releases/download/hid_bootloader_cli-210130"

@@ -7,8 +7,8 @@ class Mdloader < Formula
   head "https://github.com/Massdrop/mdloader.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/qmk/homebrew-qmk/releases/download/mdloader-1.0.7"
-    sha256 cellar: :any_skip_relocation, catalina: "1e4a86e31b75e50d9a97e26d641f6159181552bfd670c6ee696547a6d32d750f"
+    root_url "https://github.com/qmk/homebrew-qmk/releases/download/mdloader-1.0.7_1"
+    sha256 cellar: :any_skip_relocation, big_sur: "b706d800f4417a382a24b98f65facec5b3a9df277ae3e3fdade0892f3385c457"
   end
 
   def install

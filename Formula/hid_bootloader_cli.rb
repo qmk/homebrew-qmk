@@ -8,8 +8,8 @@ class HidBootloaderCli < Formula
   head "https://github.com/abcminiuser/lufa.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/qmk/homebrew-qmk/releases/download/hid_bootloader_cli-210130"
-    sha256 cellar: :any_skip_relocation, catalina: "80f4744b2150d84060347dd73cdc90db333f09a39ba16150ba8beb3afbf3642f"
+    root_url "https://github.com/qmk/homebrew-qmk/releases/download/hid_bootloader_cli-210130_1"
+    sha256 cellar: :any_skip_relocation, big_sur: "e7ccd3111a45de86e18f1e8865160ea86f20201951340835c04318287324b989"
   end
 
   def install

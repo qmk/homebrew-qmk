@@ -3,7 +3,8 @@ class Mdloader < Formula
   homepage "https://github.com/Massdrop/mdloader"
   url "https://github.com/Massdrop/mdloader/archive/1.0.7.tar.gz"
   sha256 "a3c47ed285aaa94e9a5c00c84a15798e6d90f1bb13db846cc71cad6eb4a2d7c4"
-  head "https://github.com/Massdrop/mdloader"
+  revision 1
+  head "https://github.com/Massdrop/mdloader.git", branch: "master"
 
   bottle do
     root_url "https://github.com/qmk/homebrew-qmk/releases/download/mdloader-1.0.7"

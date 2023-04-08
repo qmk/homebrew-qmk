@@ -13,6 +13,8 @@ jobs:
         with:
           # Required, custom GitHub access token with only the 'public_repo' scope enabled
           token: ${{secrets.QMK_BOT_TOKEN}}
+          # Optional, use the origin repository instead of forking
+          no_fork: true
           # Bump all outdated formulae in this tap
           tap: qmk/homebrew-qmk
           # Bump only these formulae if outdated

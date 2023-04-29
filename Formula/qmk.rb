@@ -5,6 +5,8 @@ class Qmk < Formula
   homepage "https://docs.qmk.fm/"
   url "https://files.pythonhosted.org/packages/08/df/60d820bcaf228d620cf1e894ffd4b6cfd8084504c0e49335ca1df29713cd/qmk-1.1.2.tar.gz"
   sha256 "f871f88f1a0ca31ba31a009d716417e46bc538a4f8df8ede6a801c9076c22998"
+  license "MIT"
+  revision 1
 
   bottle do
     root_url "https://github.com/qmk/homebrew-qmk/releases/download/qmk-1.1.2"

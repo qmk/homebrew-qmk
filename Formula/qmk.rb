@@ -25,7 +25,7 @@ class Qmk < Formula
   depends_on "libusb"
   depends_on "make"
   depends_on "mdloader"
-  depends_on "osx-cross/arm/arm-gcc-bin@8"
+  depends_on "osx-cross/arm/arm-gcc-bin@10"
   depends_on "osx-cross/avr/avr-gcc@8"
   depends_on "pillow"
   depends_on "python"

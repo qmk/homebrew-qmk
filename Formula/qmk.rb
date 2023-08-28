@@ -6,7 +6,7 @@ class Qmk < Formula
   url "https://files.pythonhosted.org/packages/08/df/60d820bcaf228d620cf1e894ffd4b6cfd8084504c0e49335ca1df29713cd/qmk-1.1.2.tar.gz"
   sha256 "f871f88f1a0ca31ba31a009d716417e46bc538a4f8df8ede6a801c9076c22998"
   license "MIT"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://ghcr.io/v2/qmk/qmk"
@@ -21,11 +21,12 @@ class Qmk < Formula
   depends_on "clang-format"
   depends_on "dfu-programmer"
   depends_on "dfu-util"
+  depends_on "hid_bootloader_cli"
   depends_on "hidapi"
   depends_on "libusb"
   depends_on "make"
   depends_on "mdloader"
-  depends_on "osx-cross/arm/arm-gcc-bin@8"
+  depends_on "osx-cross/arm/arm-none-eabi-gcc@8"
   depends_on "osx-cross/avr/avr-gcc@8"
   depends_on "pillow"
   depends_on "python"

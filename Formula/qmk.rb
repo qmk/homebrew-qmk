@@ -6,7 +6,7 @@ class Qmk < Formula
   url "https://files.pythonhosted.org/packages/08/df/60d820bcaf228d620cf1e894ffd4b6cfd8084504c0e49335ca1df29713cd/qmk-1.1.2.tar.gz"
   sha256 "f871f88f1a0ca31ba31a009d716417e46bc538a4f8df8ede6a801c9076c22998"
   license "MIT"
-  revision 2
+  revision 3
 
   bottle do
     root_url "https://ghcr.io/v2/qmk/qmk"
@@ -86,8 +86,8 @@ class Qmk < Formula
   end
 
   resource "milc" do
-    url "https://files.pythonhosted.org/packages/92/c0/3377091d68d98f7448e9e3624d6692548efcd98917cc48a69efb650a3eb4/milc-1.6.6.tar.gz"
-    sha256 "a4a1673718aaceefeb62c1799e48825bc6f4e56bfd8ad4a8e341a7622e6ff000"
+    url "https://files.pythonhosted.org/packages/90/36/21cfc848c105e3e5f40f919df242d62f311979e95d68cb74237ed924fc5e/milc-1.6.8.tar.gz"
+    sha256 "a2ac93a771c1ff2304a1a5d7c28d13b07986d39e8099adb1408c8e62c46bdcde"
   end
 
   resource "Pillow" do

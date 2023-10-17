@@ -10,9 +10,8 @@ class Qmk < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/qmk/qmk"
-    sha256 cellar: :any, ventura:  "25fff98a87452b5ea27a2feb1d969abb2bfdc729cba08e49b579012ec2df514b"
-    sha256 cellar: :any, monterey: "dc5c62bb865f0fc1c65b9ed6c0f33e43e34cb94baca2fa70785f00202bd0ee21"
-    sha256 cellar: :any, big_sur:  "88b85c6f8cbab14cef14e9e826145c5dcfe69a7285b22105ac8684855290c854"
+    sha256 cellar: :any, ventura:  "be4d886cbb0e8caed371965a924bda65a8ecba5d357ddcea3c8e7a7bf04e9996"
+    sha256 cellar: :any, monterey: "2d06b7ec6d3ddd37f4af2258bd42ea5ef8734f965ea0f27e442ceb26dad4d50c"
   end
 
   depends_on "avrdude"

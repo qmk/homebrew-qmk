@@ -8,9 +8,9 @@ class Mdloader < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/qmk/qmk"
-    sha256 cellar: :any_skip_relocation, ventura:  "d8f755cd96d7517b955674c29d92c7f1dd86446279f2ff2e4e92fa96b466eef6"
-    sha256 cellar: :any_skip_relocation, monterey: "2437eac987edae946c5626abc5108fb6b38f4ef9a74005c1a06f54daa21d1761"
-    sha256 cellar: :any_skip_relocation, big_sur:  "bb6d00c83467630f2688c0834828bc3b49fdda46e60ef77076014019cb18bb8d"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "03924c1c44a9021b7b468f8aec9b54647aa78ebbb92022f36b617f78b074ee84"
+    sha256 cellar: :any_skip_relocation, ventura:      "b4a3feca0ba2e4c55d8081791309d04b1837373fbae729df3eb47b41df8875da"
+    sha256 cellar: :any_skip_relocation, monterey:     "d769ca7e71330ceecade0945dc71d640a427960a91c8052fe45a74a326e24e2e"
   end
 
   def install

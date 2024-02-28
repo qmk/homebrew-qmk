@@ -3,10 +3,9 @@ class Qmk < Formula
 
   desc "Quantum Mechanical Keyboard (QMK) Firmware"
   homepage "https://docs.qmk.fm/"
-  url "https://files.pythonhosted.org/packages/08/df/60d820bcaf228d620cf1e894ffd4b6cfd8084504c0e49335ca1df29713cd/qmk-1.1.2.tar.gz"
-  sha256 "f871f88f1a0ca31ba31a009d716417e46bc538a4f8df8ede6a801c9076c22998"
+  url "https://files.pythonhosted.org/packages/64/20/cec7ce9b7c05307209542427f417d005f082771596ab0f628f6a888b8aee/qmk-1.1.5.tar.gz"
+  sha256 "2efe3c752230c6ba24b8719c3b6e85a5644bf8f7d0dd237757eda9b7b7e60b11"
   license "MIT"
-  revision 4
 
   bottle do
     root_url "https://ghcr.io/v2/qmk/qmk"
@@ -85,16 +84,16 @@ class Qmk < Formula
   end
 
   resource "milc" do
-    url "https://files.pythonhosted.org/packages/90/36/21cfc848c105e3e5f40f919df242d62f311979e95d68cb74237ed924fc5e/milc-1.6.8.tar.gz"
-    sha256 "a2ac93a771c1ff2304a1a5d7c28d13b07986d39e8099adb1408c8e62c46bdcde"
+    url "https://files.pythonhosted.org/packages/3c/7f/f13f3cbdbc0284440cee8a3a4a0aeccde2f99c51f6c1f81f3a5bc033f11e/milc-1.8.0.tar.gz"
+    sha256 "cabe658de07ab97f937c7672b8a604cc825174c28d66d3afd047a9b4b2770bbe"
   end
 
-  resource "Pillow" do
+  resource "pillow" do
     url "https://files.pythonhosted.org/packages/f8/3e/32cbd0129a28686621434cbf17bb64bf1458bfb838f1f668262fefce145c/pillow-10.2.0.tar.gz"
     sha256 "e87f0b2c78157e12d7686b27d63c070fd65d994e8ddae6f328e0dcf4a0cd007e"
   end
 
-  resource "Pygments" do
+  resource "pygments" do
     url "https://files.pythonhosted.org/packages/55/59/8bccf4157baf25e4aa5a0bb7fa3ba8600907de105ebc22b0c78cfbf6f565/pygments-2.17.2.tar.gz"
     sha256 "da46cec9fd2de5be3a8a784f434e4c4ab670b4ff54d605c4c2717e9d49c4c367"
   end
@@ -127,6 +126,11 @@ class Qmk < Formula
   resource "termcolor" do
     url "https://files.pythonhosted.org/packages/10/56/d7d66a84f96d804155f6ff2873d065368b25a07222a6fd51c4f24ef6d764/termcolor-2.4.0.tar.gz"
     sha256 "aab9e56047c8ac41ed798fa36d892a37aca6b3e9159f3e0c24bc64a9b3ac7b7a"
+  end
+
+  resource "types-colorama" do
+    url "https://files.pythonhosted.org/packages/f5/c8/d5c5dabc9b19ee7c03748f354004e5f311470cb5d1373e33670160be368b/types-colorama-0.4.15.20240205.tar.gz"
+    sha256 "7ae4f58d407d387f4f98b24d81e1b7657ec754ea1dc4619ae5bd27f0c367637e"
   end
 
   def install

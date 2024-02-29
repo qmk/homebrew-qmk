@@ -14,6 +14,7 @@ class Qmk < Formula
     sha256 cellar: :any, monterey: "166fff75e145d104dec876c9455656320626b4503606267cbf3ff382e185dfdb"
   end
 
+  depends_on "pkg-config" => :build
   depends_on "avrdude"
   depends_on "bootloadhid"
   depends_on "clang-format"
@@ -29,10 +30,6 @@ class Qmk < Formula
   depends_on "pillow"
   depends_on "python"
   depends_on "teensy_loader_cli"
-
-  on_arm do
-    depends_on "pkg-config" => :build
-  end
 
   resource "appdirs" do
     url "https://files.pythonhosted.org/packages/d7/d8/05696357e0311f5b5c316d7b95f46c669dd9c15aaeecbb48c7d0aeb88c40/appdirs-1.4.4.tar.gz"

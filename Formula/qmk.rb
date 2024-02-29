@@ -6,7 +6,7 @@ class Qmk < Formula
   url "https://files.pythonhosted.org/packages/64/20/cec7ce9b7c05307209542427f417d005f082771596ab0f628f6a888b8aee/qmk-1.1.5.tar.gz"
   sha256 "2efe3c752230c6ba24b8719c3b6e85a5644bf8f7d0dd237757eda9b7b7e60b11"
   license "MIT"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://ghcr.io/v2/qmk/qmk"

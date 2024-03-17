@@ -159,7 +159,7 @@ class Qmk < Formula
         use the -H flag:
 
             qmk setup -H /your/preferred/path
-        EOS
+      EOS
     end
   end
 

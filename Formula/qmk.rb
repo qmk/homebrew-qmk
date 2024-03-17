@@ -143,24 +143,24 @@ class Qmk < Formula
   end
 
   def caveats
-    if (HOMEBREW_PREFIX/"bin/qmk").exist? and not qmk_home_set?
-        <<~EOS
-          The QMK CLI has been installed but your QMK home is not set.
+    if (HOMEBREW_PREFIX/"bin/qmk").exist? && !qmk_home_set?
+      <<~EOS
+        The QMK CLI has been installed but your QMK home is not set.
 
-          This may be your first install. Please run `qmk setup` now to find or clone
-          the repository to your home directory.
+        This may be your first install. Please run `qmk setup` now to find or clone
+        the repository to your home directory.
 
-          If you have forked qmk/qmk_firmware on GitHub or are using a third-party fork,
-          you can clone it instead like so:
+        If you have forked qmk/qmk_firmware on GitHub or are using a third-party fork,
+        you can clone it instead like so:
 
-              qmk setup <username>/qmk_firmware
+            qmk setup <username>/qmk_firmware
 
-          To set a specific QMK home (the directory the repository is cloned into),
-          use the -H flag:
+        To set a specific QMK home (the directory the repository is cloned into),
+        use the -H flag:
 
-              qmk setup -H /your/preferred/path
+            qmk setup -H /your/preferred/path
         EOS
-      end
+    end
   end
 
   test do

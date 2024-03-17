@@ -6,6 +6,7 @@ class Qmk < Formula
   url "https://files.pythonhosted.org/packages/64/20/cec7ce9b7c05307209542427f417d005f082771596ab0f628f6a888b8aee/qmk-1.1.5.tar.gz"
   sha256 "2efe3c752230c6ba24b8719c3b6e85a5644bf8f7d0dd237757eda9b7b7e60b11"
   license "MIT"
+  revision 1
 
   bottle do
     root_url "https://ghcr.io/v2/qmk/qmk"
@@ -137,20 +138,29 @@ class Qmk < Formula
     virtualenv_install_with_resources
   end
 
+  def qmk_home_set?
+    `#{HOMEBREW_PREFIX}/bin/qmk config`.include? "user.qmk_home"
+  end
+
   def caveats
-    <<~EOS
-      QMK Firmware has been installed but your environment may not have been setup yet. Please set it up now:
+    if (HOMEBREW_PREFIX/"bin/qmk").exist? and not qmk_home_set?
+        <<~EOS
+          The QMK CLI has been installed but your QMK home is not set.
 
-          qmk setup
+          This may be your first install. Please run `qmk setup` now to find or clone
+          the repository to your home directory.
 
-      If you have a fork already you can specify it like this:
+          If you have forked qmk/qmk_firmware on GitHub or are using a third-party fork,
+          you can clone it instead like so:
 
-          qmk setup <username>/qmk_firmware
+              qmk setup <username>/qmk_firmware
 
-      This will create qmk_firmware in your home directory. If you'd like to change this location, use the -H flag as well:
+          To set a specific QMK home (the directory the repository is cloned into),
+          use the -H flag:
 
-          qmk setup -H /your/preferred/path
-    EOS
+              qmk setup -H /your/preferred/path
+        EOS
+      end
   end
 
   test do

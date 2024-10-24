@@ -9,9 +9,9 @@ class HidBootloaderCli < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/qmk/qmk"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "740b3a70f3b3f1d60c55ed4a53b248a166c47c415bf0ff91e48f9dd58ac77def"
-    sha256 cellar: :any_skip_relocation, ventura:      "5f10933451f8dbab6c37195c9e0cd3c63affcf9f288f7241a81164c3d8ecb98d"
-    sha256 cellar: :any_skip_relocation, monterey:     "7df3f6fa152b8801764cbc6e54bfd980fbec4cd163eea143bc615d3030cd6fa3"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e6dba52e874d718b6c2ebd876cc200bfb95305831cfd6a8a6155eb0e05670e22"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "0d0749ff8bd4e1833ced1d17e87e089229345b148266f157d6f80ec100c58398"
+    sha256 cellar: :any_skip_relocation, ventura:       "e72d8880a479e2bb497e0691a80818b24c20dd13e0a6d53549e1b722bbfae740"
   end
 
   def install

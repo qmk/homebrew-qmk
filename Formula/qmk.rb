@@ -13,6 +13,8 @@ class Qmk < Formula
     sha256 cellar: :any, ventura:      "d23828fdb1d053cf8ac2fd7084a0bdbd33adf43877892d5b7eccbfb86fc99419"
   end
 
+  depends_on "rust" => :build
+
   depends_on "avrdude"
   depends_on "bootloadhid"
   depends_on "clang-format"

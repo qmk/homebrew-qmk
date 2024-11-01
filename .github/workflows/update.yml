@@ -6,7 +6,7 @@ on:
 
 jobs:
   update:
-    runs-on: macos-12
+    runs-on: macos-latest
     steps:
       - name: Update Homebrew formula
         uses: dawidd6/action-homebrew-bump-formula@v3

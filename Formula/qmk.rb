@@ -3,8 +3,8 @@ class Qmk < Formula
 
   desc "Quantum Mechanical Keyboard (QMK) Firmware"
   homepage "https://docs.qmk.fm/"
-  url "https://files.pythonhosted.org/packages/be/2a/18777123ddb4831c578ef5cc084e5685537fec0bd22d2f4834cfd925bd4d/qmk-1.1.7.tar.gz"
-  sha256 "e10873b1ae4600079282dec566c4562153b5641fb4d745ad06ff52577f1782da"
+  url "https://files.pythonhosted.org/packages/3b/76/633222ed56333f0f6c82c29cb4afaa1e3e21b938445a34337978263d1e38/qmk-1.1.8.tar.gz"
+  sha256 "0b426b6bf20aeb5b67806b2e127303e26c9245cfe265581d6046cc5edc29059d"
   license "MIT"
 
   bottle do
